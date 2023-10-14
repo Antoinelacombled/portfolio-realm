@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.3.0",
+    "@fullpage/react-fullpage": "^0.1.40",
+    "fullpage.js": "^4.0.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-draggable": "^4.4.6",
     "react-router-dom": "^6.16.0",
     "sass": "^1.69.3"
   },

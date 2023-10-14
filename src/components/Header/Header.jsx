@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './header.scss'
+import Draggable from 'react-draggable';
+
 
 const Header = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -23,6 +25,7 @@ const Header = () => {
     return (
 
         <div className='sup-header-container'>
+
 
             <div className="header-content">
                 <div className="location">
