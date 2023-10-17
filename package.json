@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@ap.cx/react-fullpage": "^0.3.0",
+    "@bsmnt/scrollytelling": "^0.3.0",
     "@fullpage/react-fullpage": "^0.1.40",
     "fullpage.js": "^4.0.20",
+    "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.6",

@@ -27,6 +27,7 @@ const Header = () => {
         <div className='sup-header-container'>
 
 
+
             <div className="header-content">
                 <div className="location">
                     PARIS, FR -
@@ -35,6 +36,9 @@ const Header = () => {
                     {currentTime.toLocaleTimeString('fr-FR', timeOptions)}
                 </div>
             </div>
+            <div className='project-name'>"PROJECT1: COMPONENT"</div>
+
+
 
             <div className='toolbar-header'>
                 <div className='menu'></div>

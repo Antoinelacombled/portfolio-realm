@@ -4,18 +4,21 @@ import Header from './components/Header/Header';
 import SceneOne from './components/SceneOne/SceneOne';
 import SceneTwo from './components/SceneTwo/SceneTwo';
 import SceneThree from './components/SceneThree/SceneThree';
-
 import './fullpage.min.css';
 import Fullpage, { FullPageSections } from '@ap.cx/react-fullpage';
-import Draggable from 'react-draggable';
+import { useState } from 'react';
+
 
 
 function App() {
+
+  const [currentSection, setCurrentSection] = useState(1);
+
+
   return (
 
     <div className='super-container'>
-<Header />
-      {/* <Draggable><div>glissez moi </div></Draggable> */}
+      <Header />
       <Fullpage>
         <FullPageSections>
           <SceneOne />

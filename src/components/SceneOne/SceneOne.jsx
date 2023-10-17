@@ -11,8 +11,10 @@ const SceneOne = () => {
                     <div className="content">
                     </div>
 
-                    <Draggable handle=".title-bar">
-                        <div className="mac-window active">
+                    <Draggable
+                        handle=".title-bar"
+                    >
+                        <div className="mac-window big">
                             <div className="title-bar">
                                 <div className="buttons">
                                     <div className="close"></div>
@@ -28,7 +30,7 @@ const SceneOne = () => {
                         </div>
                     </Draggable>
                     <Draggable handle=".title-bar">
-                        <div className="mac-window active">
+                        <div className="mac-window medium">
                             <div className="title-bar">
                                 <div className="buttons">
                                     <div className="close"></div>
@@ -44,6 +46,22 @@ const SceneOne = () => {
                         </div>
                     </Draggable>
 
+                    <Draggable handle=".title-bar">
+                        <div className="mac-window small">
+                            <div className="title-bar">
+                                <div className="buttons">
+                                    <div className="close"></div>
+                                    <div className="minimize"></div>
+                                    <div className="maximize"></div>
+                                </div>
+                                <div className="title">
+                                    Mac Window Modal
+                                </div>
+                            </div>
+                            <div className="window">
+                            </div>
+                        </div>
+                    </Draggable>
 
 
                 </div>

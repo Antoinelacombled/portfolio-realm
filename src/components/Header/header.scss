@@ -15,6 +15,18 @@
     top: 5px;
     width: 100%;
     z-index: 99999999;
+    padding-top: 5px;
+}
+
+.project-name {
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    padding-top: 25px;
 }
 
 .location {
