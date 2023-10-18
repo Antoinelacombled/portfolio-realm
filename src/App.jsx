@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import SceneOne from './components/SceneOne/SceneOne';
@@ -7,31 +6,31 @@ import SceneThree from './components/SceneThree/SceneThree';
 import './fullpage.min.css';
 import Fullpage, { FullPageSections } from '@ap.cx/react-fullpage';
 import { useState } from 'react';
+import DarkModeContext from './store/DarkModeContext';
 
 
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
 
-  const [currentSection, setCurrentSection] = useState(1);
-
+  const toggleDarkMode = () => {
+      setDarkMode(!darkMode);
+  };
 
   return (
-
-    <div className='super-container'>
-      <Header />
-      <Fullpage>
-        <FullPageSections>
-          <SceneOne />
-          <SceneTwo />
-          <SceneThree />
-        </FullPageSections>
-      </Fullpage>
-
-
-
-    </div>
-  )
-
+      <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
+          <div className='super-container'>
+              <Header />
+              <Fullpage>
+                  <FullPageSections>
+                      <SceneOne />
+                      <SceneTwo />
+                      <SceneThree />
+                  </FullPageSections>
+              </Fullpage>
+          </div>
+      </DarkModeContext.Provider>
+  );
 }
 
 export default App;

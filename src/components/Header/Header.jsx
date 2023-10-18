@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import DarkModeContext from '../../store/DarkModeContext';
 import './header.scss'
-import Draggable from 'react-draggable';
+
 
 
 const Header = () => {
@@ -21,6 +22,8 @@ const Header = () => {
         minute: '2-digit',
         hour12: false,
     };
+
+    const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
 
     return (
 
@@ -43,7 +46,9 @@ const Header = () => {
             <div className='toolbar-header'>
                 <div className='menu'></div>
                 <div className="gradient-bar"></div>
-                <div className='smiley'></div>
+                <button className={`smiley ${darkMode ? 'dark-button' : 'light-button'}`} onClick={toggleDarkMode}>
+                <div className='emoji'>{darkMode ? '🌝' : '🌚'}</div>
+                </button>
             </div>
 
 
