@@ -10,17 +10,35 @@ import DarkModeContext from "./store/DarkModeContext";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  //state INTEGER numéro de la slide
   const [slide, setSlide] = useState(0);
+  //state scroll position
+  const [prevScrollPosition, setPrevScrollPosition] = useState(window.scrollY);
 
-  // controler le scroll, if scroll down == +1, if scroll up == -1
-  // onScroll / useRef
-
-  function slideCount() {
-    setSlide();
-  }
+  console.log(window.scrollY);
 
   useEffect(() => {
-    console.log(slide);
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+      if (currentScrollPosition > prevScrollPosition) {
+        //scrolling down
+        setSlide((prevSlide) => prevSlide + 1);
+      } else if (currentScrollPosition < prevScrollPosition) {
+        //scrolling up
+        setSlide((prevSlide) => Math.max(0, prevSlide - 1));
+      }
+      setPrevScrollPosition(currentScrollPosition);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPosition]);
+
+  //console.log
+
+  useEffect(() => {
+    console.log(`slide state = ${slide}`);
   }, [slide]);
 
   const toggleDarkMode = () => {
@@ -31,14 +49,11 @@ function App() {
     <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
       <div className="super-container">
         <Header />
-        <Fullpage onChange={(e) => slideCount}>
+        <Fullpage>
           <FullPageSections>
-            <SceneOne />
-            <SceneTwo />
-            <SceneThree />
-            <SceneThree />
-            <SceneThree />
-            <SceneThree />
+            <SceneOne projectNameOne={"'3D PRODUCT PAGE'"} />
+            <SceneTwo projectNameTwo={"'POKER SOLVER'"} />
+            <SceneThree projectNameThree={"'E-COMMERCE IMMERSIF'"} />
           </FullPageSections>
         </Fullpage>
       </div>

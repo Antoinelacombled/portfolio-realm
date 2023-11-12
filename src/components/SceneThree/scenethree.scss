@@ -1,25 +1,31 @@
 .sup-container-scene-three {
-    background-image: url('../../assets/bg3.png');
-    position: relative;
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+  background-image: url("../../assets/bg3.png");
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
 }
 
 .big {
-    max-height: 60%;
-    max-width: 55%;
+  max-height: 60%;
+  max-width: 55%;
 }
 
-
 .medium {
-    max-height: 40%;
-    max-width: 35%;
+  max-height: 40%;
+  max-width: 35%;
 }
 
 .small {
-    max-height: 20%;
-    max-width: 35%;
+  max-height: 20%;
+  max-width: 35%;
+}
+.project-three {
+  position: absolute;
+  top: 0;
+  margin-top: 80px;
+  font-weight: bold;
+  font-size: x-large;
 }

@@ -4,12 +4,13 @@ import Draggable from "react-draggable";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
 
-const SceneThree = () => {
+const SceneThree = ({ projectNameThree }) => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   return (
     <FullpageSection style={{ height: "100vh" }}>
       <div className="sup-container-scene-three ">
         <div className="section">
+          <div className="project-three">{projectNameThree}</div>
           <div className="content"></div>
 
           <Draggable handle=".title-bar" defaultPosition={{ x: 200, y: 200 }}>
