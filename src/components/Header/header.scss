@@ -31,10 +31,12 @@
 
 .location {
   font-size: 10px;
+  color: white;
 }
 
 .current-time {
   font-size: 10px;
+  color: white;
 }
 
 .smiley {
@@ -114,3 +116,10 @@
   background-color: lightgray;
 }
 
+/* Styles pour les écrans de petite taille (ex : téléphones) */
+@media (max-width: 600px) {
+  .sup-header-container,
+  .toolbar-header {
+    display: none;
+  }
+}
