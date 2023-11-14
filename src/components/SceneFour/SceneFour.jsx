@@ -1,4 +1,4 @@
-import "./SceneFour.scss";
+import "./Scenefour.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
