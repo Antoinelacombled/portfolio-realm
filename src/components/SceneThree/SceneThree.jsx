@@ -1,75 +1,49 @@
 import "./scenethree.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
-import Draggable from "react-draggable";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
+import videoAll3d from "../../assets/3d-website-all.mp4";
 
 const SceneThree = ({ projectNameThree }) => {
-  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
-  return (
-    <FullpageSection style={{ height: "100vh" }}>
-      <div className="sup-container-scene-three ">
-        <div className="section">
-          <div className="project-three">{projectNameThree}</div>
-          <div className="content"></div>
+  const { darkMode } = useContext(DarkModeContext);
 
-          <Draggable handle=".title-bar" defaultPosition={{ x: 200, y: 200 }}>
-            <div className="mac-window small">
-              <div
-                className={`title-bar ${darkMode ? "dark-bar" : "light-bar"}`}
-              >
-                <div className="buttons">
-                  <div className="close"></div>
-                  <div className="minimize"></div>
-                  <div className="maximize"></div>
-                </div>
-                <div
-                  className={`title ${darkMode ? "dark-title" : "light-title"}`}
-                >
-                  Mac Window Modal
-                </div>
-              </div>
-              <div className="window"></div>
+  return (
+    <FullpageSection className="header-container-scene-three">
+      <div className="section one">
+        <div className="project-three">
+          <div className="marquee-container">
+            <div className="marquee">{projectNameThree}</div>
+          </div>
+        </div>
+
+        <div className="mac-window central-window">
+          <div className={`title-bar ${darkMode ? "dark-bar" : "light-bar"}`}>
+            <div className="buttons">
+              <div className="close"></div>
+              <div className="minimize"></div>
+              <div className="maximize"></div>
             </div>
-          </Draggable>
-          <Draggable handle=".title-bar" defaultPosition={{ x: -300, y: -130 }}>
-            <div className="mac-window medium">
-              <div
-                className={`title-bar ${darkMode ? "dark-bar" : "light-bar"}`}
-              >
-                <div className="buttons">
-                  <div className="close"></div>
-                  <div className="minimize"></div>
-                  <div className="maximize"></div>
-                </div>
-                <div
-                  className={`title ${darkMode ? "dark-title" : "light-title"}`}
-                >
-                  Mac Window Modal
-                </div>
-              </div>
-              <div className="window"></div>
+            <div className={`title ${darkMode ? "dark-title" : "light-title"}`}>
+              3d-Product-Page
             </div>
-          </Draggable>
-          <Draggable handle=".title-bar" defaultPosition={{ x: -130, y: -30 }}>
-            <div className="mac-window big">
-              <div
-                className={`title-bar ${darkMode ? "dark-bar" : "light-bar"}`}
+          </div>
+          <div className="window">
+            <video
+              src={videoAll3d}
+              autoPlay
+              loop
+              muted
+              className="video-scene-one"
+            />
+            <div className="overlay">
+              <a
+                href="https://github.com/your-username/your-repo"
+                className="github-link"
               >
-                <div className="buttons">
-                  <div className="close"></div>
-                  <div className="minimize"></div>
-                  <div className="maximize"></div>
-                </div>
-                <div
-                  className={`title ${darkMode ? "dark-title" : "light-title"}`}
-                >
-                  Mac Window Modal
-                </div>
-              </div>
-              <div className="window"></div>
+                Voir le code sur Github
+              </a>
             </div>
-          </Draggable>
+          </div>
         </div>
       </div>
     </FullpageSection>

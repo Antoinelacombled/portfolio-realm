@@ -14,13 +14,15 @@ import DarkModeContext from "./store/DarkModeContext";
 import "./App.css";
 import "./fullpage.min.css";
 import Fullpage, { FullPageSections } from "@ap.cx/react-fullpage";
+import SceneFour from "./components/SceneFour/SceneFour";
 
 const PortfolioScenes = () => (
   <Fullpage>
     <FullPageSections>
       <SceneOne projectNameOne={"'3D PRODUCT PAGE'"} />
-      <SceneTwo projectNameTwo={"'POKER SOLVER'"} />
+      <SceneTwo projectNameTwo={"'DISNEY CLONE'"} />
       <SceneThree projectNameThree={"'E-COMMERCE IMMERSIF'"} />
+      <SceneFour projectNameFour={"STYLISED COMPONENTS"} />
     </FullPageSections>
   </Fullpage>
 );

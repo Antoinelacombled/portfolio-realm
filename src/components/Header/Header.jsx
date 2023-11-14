@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
 import { motion } from "framer-motion";
 import "./header.scss";
+import logo from "../../assets/logoA.png";
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -34,7 +35,7 @@ const Header = () => {
       </div>
 
       <div className="toolbar-header">
-        <div className="menu"></div>
+        <img src={logo} className="logogo" />
         <div className="gradient-bar"></div>
         <button
           className={`smiley ${darkMode ? "dark-button" : "light-button"}`}

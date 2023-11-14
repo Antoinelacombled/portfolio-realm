@@ -1,18 +1,18 @@
-import "./scenetwo.scss";
+import "./SceneFour.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
 import videoAll3d from "../../assets/3d-website-all.mp4";
 
-const SceneTwo = ({ projectNameTwo }) => {
+const SceneFour = ({ projectNameFour }) => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <FullpageSection className="header-container-scene-two">
+    <FullpageSection className="header-container-scene-four">
       <div className="section one">
-        <div className="project-two">
+        <div className="project-four">
           <div className="marquee-container">
-            <div className="marquee">{projectNameTwo}</div>
+            <div className="marquee">{projectNameFour}</div>
           </div>
         </div>
 
@@ -50,4 +50,4 @@ const SceneTwo = ({ projectNameTwo }) => {
   );
 };
 
-export default SceneTwo;
+export default SceneFour;
