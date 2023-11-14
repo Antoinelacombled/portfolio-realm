@@ -2,7 +2,7 @@ import "./Scenefour.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
-import videoAll3d from "../../assets/3d-website-all.mp4";
+import composantsvideo from "../../assets/sequencecomposants.mp4";
 
 const SceneFour = ({ projectNameFour }) => {
   const { darkMode } = useContext(DarkModeContext);
@@ -29,7 +29,7 @@ const SceneFour = ({ projectNameFour }) => {
           </div>
           <div className="window">
             <video
-              src={videoAll3d}
+              src={composantsvideo}
               autoPlay
               loop
               muted

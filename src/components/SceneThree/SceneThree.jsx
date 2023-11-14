@@ -2,7 +2,7 @@ import "./scenethree.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
-import videoAll3d from "../../assets/3d-website-all.mp4";
+import videothree from "../../assets/sequenceImmersif.mp4";
 
 const SceneThree = ({ projectNameThree }) => {
   const { darkMode } = useContext(DarkModeContext);
@@ -29,7 +29,7 @@ const SceneThree = ({ projectNameThree }) => {
           </div>
           <div className="window">
             <video
-              src={videoAll3d}
+              src={videothree}
               autoPlay
               loop
               muted
@@ -45,6 +45,9 @@ const SceneThree = ({ projectNameThree }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="scroll-indicator">
+        <div className="arrow"></div>
       </div>
     </FullpageSection>
   );

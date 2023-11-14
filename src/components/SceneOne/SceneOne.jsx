@@ -46,6 +46,10 @@ const SceneOne = ({ projectNameOne }) => {
           </div>
         </div>
       </div>
+
+      <div className="scroll-indicator">
+        <div className="arrow"></div>
+      </div>
     </FullpageSection>
   );
 };
