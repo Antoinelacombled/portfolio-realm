@@ -29,13 +29,13 @@ function Godrays() {
           </h1>
           {showSecondText && (
             <p className="text-xl text-white typing-effect-second">
-              Je suis développeur front-end
+              Je suis développeur front-end Javascript
             </p>
           )}
           {showButton && (
             <Link to="/portfolio">
               <button className="mt-4 px-5 py-2 rounded-full text-black bg-white font-bold button-styled">
-                Découvrez mes réalisations
+                Découvrir mes réalisations
               </button>
             </Link>
           )}
