@@ -37,7 +37,7 @@ const SceneOne = ({ projectNameOne }) => {
             />
             <div className="overlay">
               <a
-                href="https://github.com/your-username/your-repo"
+                href="https://github.com/Antoinelacombled/3D-project"
                 className="github-link"
               >
                 Voir le code sur Github
