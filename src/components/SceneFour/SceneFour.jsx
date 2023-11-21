@@ -33,6 +33,7 @@ const SceneFour = ({ projectNameFour }) => {
               autoPlay
               loop
               muted
+              playsInline
               className="video-scene-one"
             />
             <div className="overlay">
