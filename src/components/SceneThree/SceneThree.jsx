@@ -11,8 +11,8 @@ const SceneThree = ({ projectNameThree }) => {
     <FullpageSection className="header-container-scene-three">
       <div className="section one">
         <div className="project-three">
-          <div className="marquee-container">
-            <div className="marquee">{projectNameThree}</div>
+          <div className="marquee-container-three">
+            <div className="marquee-three">{projectNameThree}</div>
           </div>
         </div>
 

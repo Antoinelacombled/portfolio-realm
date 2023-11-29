@@ -18,16 +18,16 @@
   justify-content: center;
 }
 
-.marquee-container {
+.marquee-container-two {
   position: absolute;
   top: 9%;
-  left: 63%;
+  left: 53%;
   transform: translate(-50%, -50%);
   width: 50%;
   overflow: hidden;
 }
 
-.marquee {
+.marquee-two {
   position: relative;
   display: inline-block;
   animation: marquee 5s linear infinite;
@@ -179,9 +179,9 @@
   .header-container-scene-one {
   }
 
-  .marquee-container {
+  .marquee-container-two {
     top: 10%;
-    left: 50%;
+    left: 30%;
     width: 80%;
   }
 

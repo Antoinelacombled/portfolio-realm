@@ -23,8 +23,8 @@ const SceneOne = ({ projectNameOne }) => {
       />
       <div className="section one">
         <div className="project-one">
-          <div className="marquee-container">
-            <div className="marquee">{projectNameOne}</div>
+          <div className="marquee-container-one">
+            <div className="marquee-one">{projectNameOne}</div>
           </div>
         </div>
 

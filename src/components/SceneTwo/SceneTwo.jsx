@@ -12,8 +12,8 @@ const SceneTwo = ({ projectNameTwo }) => {
     <FullpageSection className="header-container-scene-two">
       <div className="section one">
         <div className="project-two">
-          <div className="marquee-container">
-            <div className="marquee">{projectNameTwo}</div>
+          <div className="marquee-container-two">
+            <div className="marquee-two">{projectNameTwo}</div>
           </div>
         </div>
 

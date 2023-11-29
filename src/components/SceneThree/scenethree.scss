@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.marquee-container {
+.marquee-container-three {
   position: absolute;
   top: 9%;
   left: 63%;
@@ -27,7 +27,7 @@
   overflow: hidden;
 }
 
-.marquee {
+.marquee-three {
   position: relative;
   display: inline-block;
   animation: marquee 5s linear infinite;
@@ -174,21 +174,20 @@
   opacity: 1;
 }
 
-/* Styles pour les écrans de petite taille (ex : téléphones) */
 @media (max-width: 600px) {
   .header-container-scene-one {
   }
 
-  .marquee-container {
+  .marquee-container-three {
     top: 10%;
     left: 50%;
     width: 80%;
   }
 
   .mac-window {
-    max-height: 50%; // Réduire la hauteur pour les petits écrans
-    max-width: 80%; // Augmenter la largeur pour maintenir le ratio d'aspect
-    min-width: 300px; // Taille minimale pour les petits écrans
+    max-height: 50%;
+    max-width: 80%;
+    min-width: 300px;
     min-height: 200px; // Taille minimale pour les petits écrans
   }
 

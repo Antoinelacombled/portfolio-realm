@@ -149,7 +149,7 @@
   .header-container-scene-one {
   }
 
-  .marquee-container {
+  .marquee-container-one {
     top: 10%;
     left: 50%;
     width: 80%;
@@ -219,16 +219,16 @@
   }
 }
 
-.marquee-container {
+.marquee-container-one {
   position: absolute;
   top: 9%;
-  left: 55%;
+  left: 48%;
   transform: translate(-50%, -50%);
   width: 50%;
   overflow: hidden;
 }
 
-.marquee {
+.marquee-one {
   position: relative;
   display: inline-block;
   animation: marquee 5s linear infinite;
