@@ -3,7 +3,7 @@ import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
 import videoAll3d from "../../assets/3d-website-all.mp4";
-import videodisney from "../../assets/Sequencedisney.mp4";
+import videodisney from "../../assets/composants.mp4";
 
 const SceneTwo = ({ projectNameTwo }) => {
   const { darkMode } = useContext(DarkModeContext);

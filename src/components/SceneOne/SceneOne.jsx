@@ -2,13 +2,25 @@ import "./sceneone.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
-import videoAll3d from "../../assets/Sequence3D.mp4";
+import videoAll3d from "../../assets/Séquence_CYBERFIGHTER.mp4";
+
+import NoteButton from "../NoteButton/NoteButton";
 
 const SceneOne = ({ projectNameOne }) => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
     <FullpageSection className="header-container-scene-one">
+      <NoteButton
+        content={
+          <p>
+            Je conçois l'ensemble des designs de mes projets. J'utilise ReactJS,
+            Tailwind, Sass, Jquery, GraphQL, SQL, ThreeJS, WebGL et maitrise de
+            nombreux logiciels tel que Photoshop, Illustrator, Figma ou encore
+            Unreal Engine.
+          </p>
+        }
+      />
       <div className="section one">
         <div className="project-one">
           <div className="marquee-container">
@@ -24,7 +36,7 @@ const SceneOne = ({ projectNameOne }) => {
               <div className="maximize"></div>
             </div>
             <div className={`title ${darkMode ? "dark-title" : "light-title"}`}>
-              3d-Product-Page
+              CYBERFIGHTER - 3D
             </div>
           </div>
           <div className="window">

@@ -1,0 +1,66 @@
+.note-button {
+  position: fixed;
+  left: 1520px;
+  top: 50px;
+  z-index: 9999;
+  width: 100px;
+  height: 100px;
+  border-radius: 15px 15px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  background-color: #ffcc00;
+  overflow: hidden;
+  transition: all 0.3s ease, transform 0.2s ease;
+  transform-origin: center;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background-color: #ffcc00;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  // The text content
+  .note-text {
+    color: #2f2f2f;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    height: 85%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.expanded {
+    height: 230px;
+    width: 230px;
+    display: flex;
+    justify-content: center; // Center the content horizontally
+    align-items: center; // Center the content vertically
+    .note-text {
+      height: 100%;
+      display: flex;
+      justify-content: center; // Center the text horizontally
+      align-items: center; // Center the text vertically
+    }
+  }
+}

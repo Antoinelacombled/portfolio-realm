@@ -2,7 +2,7 @@ import "./Scenefour.scss";
 import { FullpageSection } from "@ap.cx/react-fullpage";
 import { useContext } from "react";
 import DarkModeContext from "../../store/DarkModeContext";
-import composantsvideo from "../../assets/sequencecomposants.mp4";
+import composantsvideo from "../../assets/pricingcomposants.mp4";
 
 const SceneFour = ({ projectNameFour }) => {
   const { darkMode } = useContext(DarkModeContext);

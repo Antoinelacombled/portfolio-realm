@@ -19,10 +19,10 @@ import SceneFour from "./components/SceneFour/SceneFour";
 const PortfolioScenes = () => (
   <Fullpage>
     <FullPageSections>
-      <SceneOne projectNameOne={"'3D PRODUCT PAGE'"} />
-      <SceneTwo projectNameTwo={"'DISNEY CLONE'"} />
-      <SceneThree projectNameThree={"'E-COMMERCE IMMERSIF'"} />
-      <SceneFour projectNameFour={"STYLISED COMPONENTS"} />
+      <SceneOne projectNameOne={"'CYBERFIGHTER - FIGHT THE FIGHTERS'"} />
+      <SceneTwo projectNameTwo={"'3D COMPONENT - BUTTON - FORM'"} />
+      <SceneThree projectNameThree={"'E-COMMERCE ONE PAGE'"} />
+      <SceneFour projectNameFour={"E-COMMERCE COMPONENTS"} />
     </FullPageSections>
   </Fullpage>
 );
