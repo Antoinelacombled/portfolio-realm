@@ -34,8 +34,10 @@ const MainContent = () => {
     <>
       {location.pathname !== "/" && <Header />}
       <Routes>
-        <Route path="/" element={<Godrays />} />
-        <Route path="/portfolio" element={<PortfolioScenes />} />
+        {/* Rediriger l'accueil directement vers les créations */}
+        <Route path="/" element={<PortfolioScenes />} />
+        {/* Autres routes si nécessaire */}
+        {/* <Route path="/godrays" element={<Godrays />} /> */}
       </Routes>
     </>
   );

@@ -11,9 +11,9 @@ function Godrays() {
       setShowSecondText(true);
       const timer2 = setTimeout(() => {
         setShowButton(true);
-      }, 1000); // Le bouton apparaîtra 2 secondes après le second texte
+      }, 1000);
       return () => clearTimeout(timer2);
-    }, 2000); // Le second texte apparaît 2 secondes après le premier
+    }, 2000);
     return () => clearTimeout(timer1);
   }, []);
 
@@ -34,7 +34,7 @@ function Godrays() {
           )}
           {showButton && (
             <Link to="/portfolio">
-              <button className="custom-button mt-8 px-5 py-2 rounded-full text-black bg-white font-bold button-styled">
+              <button className="px-5 py-2 mt-8 font-bold text-black bg-white rounded-full custom-button button-styled">
                 Découvrir mes réalisations
               </button>
             </Link>

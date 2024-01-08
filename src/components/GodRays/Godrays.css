@@ -113,15 +113,15 @@ button:hover {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  line-height: 1.5; /* Exemple de hauteur de ligne fixe */
+  line-height: 1.5;
   vertical-align: top;
   animation: typing 2s steps(40, end) ease-out, forwards,
     blink 0.75s step-end infinite, blink-cursor 0.75s forwards;
 }
 
 .button-styled {
-  display: none; /* Caché par défaut */
-  animation: fadeIn 1s ease forwards; /* Animation d'apparition */
+  display: none;
+  animation: fadeIn 1s ease forwards;
 }
 
 .main-content {
@@ -149,13 +149,13 @@ button:hover {
 @media (max-width: 600px) {
   .typing-effect,
   .typing-effect-second {
-    font-size: 1.5rem; /* Taille de police plus petite pour les petits écrans */
-    animation: typing 4s steps(40, end) forwards; /* Animation plus lente pour les petits écrans */
+    font-size: 1.5rem;
+    animation: typing 4s steps(40, end) forwards;
   }
 
   .button-styled {
-    padding: 8px 16px; /* Padding réduit pour les petits écrans */
-    font-size: 0.9rem; /* Taille de police plus petite pour le bouton */
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
 
@@ -166,7 +166,7 @@ button:hover {
   width: 0;
   animation: typing 2.5s steps(40, end) forwards, blink 0.75s step-end infinite,
     blink-cursor 0.75s forwards;
-  margin-top: 20px; /* Espacement entre les lignes de texte */
+  margin-top: 20px;
 }
 
 @keyframes fadeIn {
@@ -195,7 +195,6 @@ button:hover {
   }
 }
 
-/* Animation pour arrêter le clignotement après l'achèvement de la frappe */
 @keyframes blink-cursor {
   to {
     border-color: transparent;
@@ -207,7 +206,7 @@ button:hover {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: white;
-  color: black; /* Couleur du texte par défaut */
+  color: black;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -219,14 +218,14 @@ button:hover {
   -webkit-box-shadow: 0px 0px 189px 17px rgba(45, 255, 196, 0.26);
   -moz-box-shadow: 0px 0px 189px 17px rgba(45, 255, 196, 0.26);
   box-shadow: 0px 0px 189px 17px rgba(45, 255, 196, 0.26);
-  color: white; /* Couleur du texte au survol */
+  color: white;
 }
 
 @media (max-width: 600px) {
   .typing-effect {
-    font-size: 1.5rem; /* Taille de police plus petite pour les petits écrans */
+    font-size: 1.5rem;
     animation: typing 4s steps(40, end) forwards;
-    white-space: normal; /* Permet au texte de passer à la ligne */
+    white-space: normal;
   }
 
   .button-styled {
